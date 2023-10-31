@@ -1,0 +1,60 @@
+body {
+  background-color: aquamarine;
+}
+
+button {
+  padding: 16px 32px;
+  background-color: violet;
+  color: white;
+  font-weight: bold;
+  border: 4px solid;
+  transform: translateY(40px) scale(1);
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: blue;
+  box-shadow: 5px 5px 20px;
+  transform: scale(1);
+}
+
+button:active {
+  background-color: crimson;
+}
+
+@keyframes ghost {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    transform: translateY(-20px) translateX(50px);
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+.ghost{
+    animation: ghost 3s infinite; 
+}
+
+@keyframes pumpkin {
+    0% {
+      opacity: 0%;
+    }
+    25% {
+      transform: translateY(20px) translateX(30px) ;
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+  .pumpkin{
+      animation: ghost 3s infinite;
+      scale: 0.35; 
+
+  }
+  @keyframes pumpkin{
+    rotate{}
+}
